@@ -1,0 +1,9 @@
+{% assign mainMenu = include.contentful.navigationMenu | where_exp: "menu", "menu.title == 'main'" %}
+
+<header>
+  <ul>
+    {% for link in mainMenu[0].links %}
+      {% include navLink.html link=link %}
+    {% endfor %}
+  </ul>
+</header>

@@ -1,0 +1,25 @@
+{% assign contentful = site.data.contentful.spaces.content %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="icon" href="/img/favicon.png?v=2">
+
+    <title>{{ page.title }} | {{ site.title }}</title>
+  </head>
+
+  <body>
+    <div class="container">
+      {% include header.html contentful=contentful %}
+      <main>
+        <img src="{{ page.hero.url }}" alt="{{ page.hero.title }}" />
+        <div>{{ page.title }}</div>
+        <p>{{ page.main_body_text }}</p>
+      </main>
+    </div>
+  </body>
+</html>
