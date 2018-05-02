@@ -1,5 +1,5 @@
 #! /bin/bash
-PAGE_ENTITY=landingPage
+PAGE_ENTITY=page
 
 for file in ./_data/contentful/spaces/content/$PAGE_ENTITY/*.yaml
 do
