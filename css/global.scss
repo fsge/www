@@ -2,6 +2,24 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+@import "sections/header";
+@import "sections/footer";
+
 * {
   box-sizing: border-box;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #041226;
+}
+
+.container {
+  max-width: calc(100vw - 90px);
+  margin: auto;
+}
+
+@import "utilities/responsive";

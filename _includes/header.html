@@ -1,9 +1,14 @@
 {% assign mainMenu = include.contentful.navigationMenu | where_exp: "menu", "menu.title == 'main'" %}
 
 <header>
-  <ul>
-    {% for link in mainMenu[0].links %}
-      {% include navLink.html link=link %}
-    {% endfor %}
-  </ul>
+  <nav>
+    <a class="logo-wrapper" href="/">
+      <img src="/img/logo-{{ include.page.layout }}.svg" alt="FSG Clarity" />
+    </a>
+    <ul>
+      {% for link in mainMenu[0].links %}
+        {% include navLink.html link=link page=include.page %}
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
