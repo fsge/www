@@ -1,0 +1,19 @@
+.iconAndText {
+  max-width: 300px;
+
+  figure {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    figcaption {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.7;
+    }
+  }
+}

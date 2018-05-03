@@ -1,0 +1,20 @@
+<section class="row">
+  {% if include.row.title != "" %}
+    <h5>{{ include.row.title }}</h5>
+  {% endif %}
+  <div class="content">
+    {% for item in include.row.items %}
+      {% if item.sys.content_type_id == "iconAndText" %}
+        {% include iconAndText.html data=item %}
+      {% elsif item.sys.content_type_id == "captionedImage" %}
+        {% include captionedImage.html data=item %}
+      {% elsif item.sys.content_type_id == "centeredImage" %}
+        {% include centeredImage.html data=item %}
+      {% elsif item.sys.content_type_id == "edgelessImageWithCaption" %}
+        {% include edgelessImageWithCaption.html data=item %}
+      {% elsif item.sys.content_type_id == "CTA" %}
+        {% include CTA.html data=item %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

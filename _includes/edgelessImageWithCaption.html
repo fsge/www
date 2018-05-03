@@ -1,0 +1,14 @@
+<div class="edgelessImageWithCaption">
+  <div>
+    <img src="{{ include.data.image.url }}" alt="{{ include.data.image.title }}" />
+  </div>
+  <div>
+    <h5>{{ include.data.title }}</h5>
+    <p>{{ include.data.caption }}</p>
+    <p>
+      {% if include.data.link_text != "" and include.data.link_url != "" %}
+        <a href="{{ include.data.link_url }}">{{ include.data.link_text }}</a>
+      {% endif %}
+    </p>
+  </div>
+</div>

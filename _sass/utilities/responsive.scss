@@ -221,3 +221,17 @@
     }
   }
 }
+
+/* ROW SECTIONS */
+@media (max-width: 760px) {
+  .edgelessImageWithCaption {
+    & > div {
+      padding: 0 15px;
+      text-align: center;
+      
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}

@@ -7,6 +7,12 @@
 
 @import "components/hero";
 @import "components/button";
+@import "components/CTA";
+@import "components/centeredImage";
+@import "components/edgelessImageWithCaption";
+@import "components/iconAndText";
+@import "components/captionedImage";
+@import "components/row";
 
 * {
   box-sizing: border-box;
@@ -35,33 +41,26 @@ html, body {
   margin: auto;
 }
 
+p {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab';
   margin: 0;
   margin-bottom: 15px;
 }
 
-h1 {
-  font-size: 48px;
-}
+h1 { font-size: 48px; }
+h2 { font-size: 42px; }
+h3 { font-size: 36px; }
+h4 { font-size: 32px; }
+h5 { font-size: 28px; }
+h6 { font-size: 24px; }
 
-h2 {
-  font-size: 42px;
-}
-
-h3 {
-  font-size: 36px;
-}
-
-h4 {
-  font-size: 32px;
-}
-
-h5 {
-  font-size: 28px;
-}
-
-h6 {
-  font-size: 24px;
-}
 @import "utilities/responsive";

@@ -1,0 +1,63 @@
+.captionedImage {
+  flex: 1 0 350px;
+
+  figure {
+    & > a {
+      position: relative;
+      box-shadow: 0px 8px 40px 2px rgba(0,0,0,0.6);
+      display: inline-block;
+      margin-bottom: 20px;
+
+      img {
+        float: left;
+      }
+
+      &:before {
+        content: attr(title);
+        display: block;
+        position: absolute;
+        background: white;
+        font-size: 24px;
+        font-family: 'Roboto Slab';
+        font-weight: bold;
+        color: black;
+        bottom: 0;
+        left: 0;
+        padding: 0 15px;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+
+    figcaption {
+      a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 2px;
+        position: relative;
+        padding-bottom: 5px;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #489ab6;
+          background: -moz-linear-gradient(left, #489ab6 0%, #173e8a 100%);
+          background: -webkit-linear-gradient(left, #489ab6 0%,#173e8a 100%);
+          background: linear-gradient(to right, #489ab6 0%,#173e8a 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#489ab6', endColorstr='#173e8a',GradientType=1 );
+        }
+      }
+    }
+  }
+}

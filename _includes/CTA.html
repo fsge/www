@@ -1,0 +1,9 @@
+<div class="CTA">
+  <div class="inner">
+    <h5>{{ include.data.title }}</h5>
+    <p>{{ include.data.copy }}</p>
+    {% if include.data.button_text != "" and include.data.button_url != "" %}
+      <a href="{{ include.data.button_url }}" class="button primary">{{ include.data.button_text }}</a>
+    {% endif %}
+  </div>
+</div>
