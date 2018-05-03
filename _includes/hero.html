@@ -1,0 +1,21 @@
+<section class="hero">
+  {% if include.hero.image && include.hero.image.url != "" %}
+    <img src="{{ include.hero.image.url }}" alt="" />
+  {% endif %}
+  <div class="inner">
+    <h1>{{ include.hero.title }}</h1>
+    <p>{{ include.hero.copy }}</p>
+    <div class="buttons">
+      {% if include.hero.primary_cta_text != "" and include.hero.primary_cta_link != "" %}
+        <a href="{{ include.hero.primary_cta_link }}" class="button primary">
+          {{ include.hero.primary_cta_text }}
+        </a>
+      {% endif %}
+      {% if include.hero.default_cta_text != "" and include.hero.default_cta_link != "" %}
+        <a href="{{ include.hero.default_cta_link }}" class="button default">
+          {{ include.hero.default_cta_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>

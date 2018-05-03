@@ -5,6 +5,9 @@
     <a class="logo-wrapper" href="/">
       <img src="/img/logo-{{ include.page.layout }}.svg" alt="FSG Clarity" />
     </a>
+    <a class="mobile-nav-open">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 35 24"><path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M1 12h33M1 1h33M1 23h33"/></svg>
+    </a>
     <ul>
       {% for link in mainMenu[0].links %}
         {% include navLink.html link=link page=include.page %}
@@ -12,3 +15,18 @@
     </ul>
   </nav>
 </header>
+
+<script>
+  (function() {
+    var trigger = document.querySelector('.mobile-nav-open'),
+        menu = document.querySelector('header > nav > ul');
+
+    trigger.addEventListener('click', function() {
+      if (menu.classList.toString().indexOf('open') > -1) {
+        menu.classList.remove('open');
+      } else {
+        menu.classList.add('open');
+      }
+    });
+  })();
+</script>

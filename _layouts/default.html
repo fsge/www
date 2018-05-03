@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="{{ page.description }}"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Roboto+Slab:700" rel="stylesheet">
     <link rel="stylesheet" href="/css/global.css">
     <link rel="icon" href="/img/favicon.png?v=2">
 
@@ -15,12 +15,16 @@
   </head>
 
   <body>
-    {% include header.html contentful=contentful page=page %}
-    <main>
-      <div class="container">
-        <h1>{{ page.title }}</h1>
-      </div>
-    </main>
-    {% include footer.html contentful=contentful %}
+    <div class="page-wrapper">
+      {% include header.html contentful=contentful page=page %}
+      <main>
+        <div class="container">
+          {% for section in page.page_sections %}
+            {% include section.html section=section %}
+          {% endfor %}
+        </div>
+      </main>
+      {% include footer.html contentful=contentful %}
+    </div>
   </body>
 </html>
