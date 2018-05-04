@@ -1,0 +1,88 @@
+body.contact {
+  
+  main {
+    text-align: center;
+    padding-bottom: 250px;
+
+    h1 {
+      font-size: 28px;
+      color: white;
+    }
+
+    h3 {
+      color: white;
+      font-size: 18px;
+      font-family: 'Open Sans';
+      margin-top: 30px;
+    }
+
+    form {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 450px;
+      margin: 30px auto;
+
+      input[type="text"], input[type="email"] {
+        outline: none;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+      }
+
+      input[type="text"], input[type="email"], textarea {
+        ::-webkit-input-placeholder {
+          color: #041226;
+        }
+
+        ::-moz-placeholder { 
+          color: #041226;
+        }
+
+        :-ms-input-placeholder { 
+          color: #041226;
+        }
+
+        :-moz-placeholder { 
+          color: #041226;
+        }
+      }
+
+      select {
+        display: block;
+        width: calc(100% - 30px);
+        margin: 15px;
+      }
+
+      textarea {
+        display: block;
+        outline: none;
+        border: 0;
+        width: 100%;
+        height: 100px;
+        padding: 15px;
+        font-size: 16px;
+        border-top: 1px solid #EBEDF1;
+      }
+
+      button[type="submit"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: #5BB95B;
+        color: white;
+        border: 0;
+        outline: 0;
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      & > *:not(select):not(textarea):not(:last-child) {
+        border-bottom: 1px solid #EBEDF1;
+      }
+    }
+  }
+}

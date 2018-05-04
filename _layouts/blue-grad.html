@@ -14,13 +14,15 @@
     <title>{{ page.title }} | {{ site.title }}</title>
   </head>
 
-  <body class="has-hero">
+  <body class="blue-grad">
     <div class="page-wrapper">
       {% include header.html contentful=contentful page=page logo="white" %}
       <main>
-        {% for section in page.page_sections %}
-          {% include section.html section=section %}
-        {% endfor %}
+        <div class="container">
+          {% for section in page.page_sections %}
+            {% include section.html section=section %}
+          {% endfor %}
+        </div>
       </main>
       {% include footer.html contentful=contentful %}
     </div>
