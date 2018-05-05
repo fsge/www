@@ -14,6 +14,8 @@
         {% include edgelessImageWithCaption.html data=item %}
       {% elsif item.sys.content_type_id == "CTA" %}
         {% include CTA.html data=item %}
+      {% elsif item.sys.content_type_id == "pageLinkWithEntity" %}
+        {% include pageLinkWithEntity.html data=item %}
       {% endif %}
     {% endfor %}
   </div>

@@ -1,0 +1,24 @@
+.anchored-away {  
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 5px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #489ab6;
+    background: -moz-linear-gradient(left, #489ab6 0%, #173e8a 100%);
+    background: -webkit-linear-gradient(left, #489ab6 0%,#173e8a 100%);
+    background: linear-gradient(to right, #489ab6 0%,#173e8a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#489ab6', endColorstr='#173e8a',GradientType=1 );
+  }
+}

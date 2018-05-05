@@ -1,0 +1,21 @@
+<div class="pageLinkWithEntity">
+  {% if include.data.entity_name == "customerStory" %}
+    {% assign customerStory = include.data.page.page_sections | where_exp: "section", "section.sys.content_type_id == 'customerStory'" %}
+
+    <a href="{{ include.data.page.permalink }}">
+      <img src="{{ customerStory[0].thumb_image.url }}" alt="{{ customerStory[0].thumb_image.title }}" />
+    </a>
+    <div>
+      <p>
+        <strong>{{ customerStory[0].title }}</strong><br />
+        <span>Contract Amount: {{ customerStory[0].contract_amount }}</span><br />
+        <span>Contract Type: {{ customerStory[0].contract_type }}</span>
+      </p>
+      <p>
+        <a href="{{ include.data.page.permalink }}">
+          Read More
+        </a>
+      </p>
+    </div>
+  {% endif %}
+</div>

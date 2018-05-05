@@ -3,6 +3,7 @@
 ---
 
 @import "utilities/blue-gradient";
+@import "utilities/anchored-away";
 
 @import "sections/blue-grad";
 @import "sections/contact";
@@ -18,6 +19,7 @@
 @import "components/captionedImage";
 @import "components/customer_story";
 @import "components/row";
+@import "components/pageLinkWithEntity";
 
 * {
   box-sizing: border-box;

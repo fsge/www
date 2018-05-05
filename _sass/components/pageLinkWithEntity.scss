@@ -1,0 +1,8 @@
+.pageLinkWithEntity {
+  flex: 0 0 350px;
+  padding: 0 15px;
+
+  p a {
+    @extend .anchored-away;
+  }
+}
