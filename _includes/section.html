@@ -2,4 +2,6 @@
   {% include hero.html hero=include.section %}
 {% elsif include.section.sys.content_type_id == 'row' %}
   {% include row.html row=include.section %}
+{% elsif include.section.sys.content_type_id == 'customerStory' %}
+  {% include customer_story.html story=include.section %}
 {% endif %}

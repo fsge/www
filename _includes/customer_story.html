@@ -1,0 +1,35 @@
+<div class="customer_story">
+  <div class="banner">
+    <img src="{{ include.story.image.url }}" alt="{{ include.story.image.title }}">
+  </div>
+  <div class="content">
+    <section>
+      <h2>{{ include.story.title }}</h1>
+      <h6>Location: {{ include.story.location }}</h6>
+      <h6>Type Of Contract: {{ include.story.contract_type }}</h6>
+      <p>{{ include.story.description }}</p>
+      <h3>Challenge</h3>
+      <p>{{ include.story.challenge }}</p>
+      <h3>Solution</h3>
+      <p>{{ include.story.solution }}</p>
+    </section>
+    <aside>
+      <div class="project_details">
+        <h5>Project Details</h5>
+        <p>
+          <strong>Contract Amount</strong>: {{ include.story.contract_amount }}<br />
+          <strong>Contract Type</strong>: {{ include.story.contract_type }}
+        </p>
+      </div>
+      {% if include.story.video %}
+        <video controls preload="auto" poster="{{ include.story.thumb_image.url }}">
+          <source src="{{ include.story.video.url }}">
+        </video>
+      {% endif %}
+      <div>
+        <h5>About FSG</h5>
+        <p>Facility Solutions Group is a leading single-source provider of lighting, electrical, energy, signage, and technology solutions, operating across all 50 states, Canada, and Puerto Rico.</p>
+      </div>
+    </aside>
+  </div>
+</div>

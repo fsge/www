@@ -12,11 +12,8 @@ body.has-hero {
 }
 
 section.hero {
-  background: #00418f;
-  background: -moz-linear-gradient(-45deg,#16428a 0%,#4a9cb9 100%);
-  background: -webkit-linear-gradient(-45deg,#00418f 0%,#229fbe 100%);
-  background: linear-gradient(135deg,#00418f 30%,#229fbe 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#16428a',endColorstr='#4a9cb9',GradientType=1);
+  @extend .blue-gradient;
+
   padding-bottom: 31.25%;
   color: white;
   position: relative;
@@ -60,7 +57,7 @@ section.hero {
     z-index: 3;
     width: 50%;
     max-width: 700px;
-    margin-left: 45px;
+    margin-left: 135px;
 
     h1 {
       margin-bottom: 25px;
