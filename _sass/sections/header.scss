@@ -39,6 +39,22 @@ header {
         align-content: stretch;
         justify-content: center;
 
+        span, svg {
+          display: inline-block;
+          vertical-align: middle;
+          text-decoration: none !important;
+        }
+
+        svg {
+          height: 0.4em;
+          margin-top: 0.3em;
+          margin-left: 0.3em;
+
+          path {
+            stroke: #0B1628;
+          }
+        }
+
         &:last-child {
           padding-right: 0;
         }
@@ -81,7 +97,7 @@ header {
           padding: 5px;
           color: #0B1628;
           opacity: 0.6;
-          text-decoration: none;
+          text-decoration: none !important;
 
           &.active {
             opacity: 1;
@@ -141,6 +157,10 @@ header {
 
           a {
             color: white;
+
+            svg path {
+              stroke: white
+            }
           }
 
           ul {
