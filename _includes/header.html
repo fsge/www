@@ -30,3 +30,12 @@
     });
   })();
 </script>
+
+
+{% if include.page.permalink == "/" %}
+  <style>
+    header nav ul li a {
+      opacity: 1;
+    }
+  </style>
+{% endif %}
