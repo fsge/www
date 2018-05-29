@@ -16,4 +16,17 @@
       @extend .anchored-away;
     }
   }
+  
+  &:nth(even) {
+    
+
+    & > div {
+      
+       &:nth(odd) {
+         order: 2;
+      }
+    
+    }
+  }
+  
 }
