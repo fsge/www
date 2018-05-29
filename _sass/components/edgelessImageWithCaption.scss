@@ -20,11 +20,15 @@
 
 
 .edgelessImageWithCaption {
+  
   &:nth(even) {
+    
     & > div {
+      
       &:nth(odd) {
       order: 2;
       }
+      
     }
   }
 }
