@@ -15,9 +15,14 @@
     a {
       @extend .anchored-away;
     }
-  }
+  } 
+}
+
+
+.edgelessImageWithCaption {
   
-  &:nth(even) {
+&:nth(even) {
+    
     & > div {
       
        &:nth(odd) {
@@ -25,6 +30,5 @@
       }
     
     }
-  }
-  
+  } 
 }
