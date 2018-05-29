@@ -14,7 +14,7 @@ body.has-hero {
 section.hero {
   @extend .blue-gradient;
 
-  padding-bottom: 31.25%;
+  padding-bottom: 28%;
   color: white;
   position: relative;
   overflow: hidden;
@@ -74,6 +74,7 @@ section.hero {
 
       .button {
         margin-right: 20px;
+        margin-bottom:20px;
       }
     }
   }
