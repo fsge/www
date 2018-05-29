@@ -19,6 +19,6 @@
 }
 
 
-.edgelessImageWithCaption:nth(even) > div:nth(odd) {
+.edgelessImageWithCaption:nth-child(even) > div:nth-child(odd) {
   order: 2;
 }
