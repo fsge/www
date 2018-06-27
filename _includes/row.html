@@ -16,8 +16,6 @@
         {% include CTA.html data=item %}
       {% elsif item.sys.content_type_id == "pageLinkWithEntity" %}
         {% include pageLinkWithEntity.html data=item %}
-        {% elsif item.sys.content_type_id == "h1" %}
-        {% include h1.html data=item %}
       {% endif %}
     {% endfor %}
   </div>
