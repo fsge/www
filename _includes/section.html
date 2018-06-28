@@ -4,6 +4,8 @@
   {% include row.html row=include.section %}
 {% elsif include.section.sys.content_type_id == 'customerStory' %}
   {% include customer_story.html story=include.section %}
-{% elsif include.section.sys.content_type_id == 'h1' %}
-  {% include h1.html h1=include.section %}
+{% elsif include.section.sys.content_type_id == 'html' %}
+  {% include raw.html html=include.section.html %}
+{% elsif include.section.sys.content_type_id == 'css' %}
+  {% include styles.html css=include.section.css %}
 {% endif %}
