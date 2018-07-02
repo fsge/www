@@ -67,6 +67,13 @@
 
         &.open {
           max-height: calc(100vh - 89px - 25px);
+          max-height: 100vh;
+          height: 100vh;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          padding: 10%;
+          text-align: center;
         }
       }
 
