@@ -64,7 +64,7 @@
         padding: 0;
         max-height: 0;
         height: auto;
-        transition: 0.3s all ease-in;
+        transition: 0.0s all ease-in;
 
         &.open {
           max-height: calc(100vh - 89px - 25px);
