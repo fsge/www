@@ -7,7 +7,7 @@
       <ul>
         <li class="nav-header">{{ link.title }}</li>
         {% for subLink in link.sub_links %}
-          <li><a href="{{ subLink.page.permalink }}">{{ subLink.title }}</a></li>
+          <li><a href="{% if subLink.link_override %}{{ subLink.link_override }}{% else %}{{ subLink.page.permalink }}{% endif %}">{{ subLink.title }}</a></li>
         {% endfor %}
       </ul>
     {% endfor %}
@@ -17,7 +17,7 @@
       {% if link.has_divider %}
         |
       {% endif %}
-      <a href="{{ link.page.permalink }}">{{ link.title }}</a> 
+      <a href="{% if link.link_override %}{{ link.link_override }}{% else %}{{ link.page.permalink }}{% endif %}">{{ link.title }}</a> 
     {% endfor %}
   </p>
   <p>
