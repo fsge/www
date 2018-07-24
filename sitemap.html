@@ -1,0 +1,16 @@
+---
+permalink: /sitemap.xml
+layout: blank
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+{% assign pages = site.data.contentful.spaces.content.page %}
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for page in pages %}
+    <url>
+      <loc>{{ site.url }}{{ page[1].permalink }}</loc>
+      <lastmod>{{ page[1].sys.updated_at | date: '%Y-%m-%d' }}</lastmod>
+    </url>
+  {% endfor %}
+</urlset>

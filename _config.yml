@@ -2,7 +2,7 @@ title: FSG Energy
 email: team@theneverwoods.com
 description: ""
 baseurl: ""
-url: ""
+url: "https://fsgenergy.com"
 include: 
   - _contentful
 exclude:
