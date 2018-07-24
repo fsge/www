@@ -5,17 +5,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="{{ page.description }}"/>
+    <meta name="description" content="{{ page.seo_description }}"/>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Roboto+Slab:700" rel="stylesheet">
     <link rel="stylesheet" href="/css/global.css">
     <link rel="icon" href="/img/favicon.png?v=3">
 
-    {% if page.title != "Home" %}
-      <title>{{ page.title }} | {{ site.title }}</title>
-    {% else %}
-      <title>{{ site.title }}</title>
-    {% endif %}
+    <title>{{ page.title }} | {{ site.title }}</title>
   </head>
 
   <body class="has-hero">
