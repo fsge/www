@@ -3,10 +3,6 @@ email: team@theneverwoods.com
 description: ""
 baseurl: ""
 url: ""
-plugins: 
-  - jekyll-minifier
-sass:
-  style: compressed
 include: 
   - _contentful
 exclude:

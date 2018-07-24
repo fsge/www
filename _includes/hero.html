@@ -4,7 +4,7 @@
   {% endif %}
   <div class="inner">
     <h1>{{ include.hero.title }}</h1>
-    <p>{{ include.hero.copy }}</p>
+    <div class="copy">{{ include.hero.copy }}</div>
     <div class="buttons">
       {% if include.hero.primary_cta_text != "" and include.hero.primary_cta_link != "" %}
         <a href="{{ include.hero.primary_cta_link }}" class="button primary">

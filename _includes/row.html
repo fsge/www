@@ -1,6 +1,12 @@
+{% capture first_char %}{{ include.row.title | slice: 0, 1 }}{% endcapture %}
+
 <section class="row">
   {% if include.row.title != "" %}
-    <h5>{{ include.row.title }}</h5>
+    {% if first_char == "<" %}
+      <div class="title">{{ include.row.title }}</div>
+    {% else %}
+      <h5>{{ include.row.title }}</h5>
+    {% endif %}
   {% endif %}
   <div class="content">
     {% for item in include.row.items %}
