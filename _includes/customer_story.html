@@ -19,13 +19,13 @@
         <p>
           <strong>Contract Amount</strong>: {{ include.story.contract_amount }}<br />
           <strong>Contract Type</strong>: {{ include.story.contract_type }}
-          {% if include.story.energy_savings != "" }
+          {% if include.story.energy_savings != "" %}
             <br /><strong>Energy Savings</strong>: {{ include.story.energy_savings }}
           {% endif %}
-          {% if include.story.per_site_energy_reduction != "" }
+          {% if include.story.per_site_energy_reduction != "" %}
             <br /><strong>Per Site Energy Reduction</strong>: {{ include.story.per_site_energy_reduction }}
           {% endif %}
-          {% if include.story.estimated_weekly_energy_savings != "" }
+          {% if include.story.estimated_weekly_energy_savings != "" %}
             <br /><strong>Estimated Weekly Energy Savings</strong>: {{ include.story.estimated_weekly_energy_savings }}
           {% endif %}
         </p>
