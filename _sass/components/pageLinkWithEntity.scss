@@ -2,7 +2,9 @@
   flex: 0 0 350px;
   padding: 0 15px;
 
-  p a {
-    @extend .anchored-away;
+  p {
+    br:last-child { display: none; }
+
+    a { @extend .anchored-away; }
   }
 }

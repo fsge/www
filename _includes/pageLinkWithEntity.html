@@ -8,8 +8,12 @@
     <div>
       <p>
         <strong>{{ customerStory[0].title }}</strong><br />
-        <span>Contract Amount: {{ customerStory[0].contract_amount }}</span><br />
-        <span>Contract Type: {{ customerStory[0].contract_type }}</span>
+        {% if customerStory[0].contract_amount && customerStory[0].contract_amount != "" %}
+          <span>Contract Amount: {{ customerStory[0].contract_amount }}</span><br />
+        {% endif %}
+        {% if customerStory[0].contract_type && customerStory[0].contract_type != "" %}
+          <span>Contract Type: {{ customerStory[0].contract_type }}</span><br />
+        {% endif %}
       </p>
       <p>
         <a href="{{ include.data.page.permalink }}">
