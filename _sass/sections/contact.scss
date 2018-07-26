@@ -71,6 +71,14 @@ body.contact {
         border-top: 1px solid #EBEDF1;
       }
 
+      & > div {
+        text-align: center;
+
+        & > .g-recaptcha {
+          display: inline-block;
+        }
+      }
+
       button[type="submit"] {
         -webkit-appearance: none;
         appearance: none;

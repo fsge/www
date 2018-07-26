@@ -1,0 +1,25 @@
+title: FSG Energy
+email: team@theneverwoods.com
+description: ""
+baseurl: ""
+url: "https://fsgenergy.com"
+plugins: 
+  - jekyll-minifier
+sass:
+  style: compressed
+include: 
+  - _contentful
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - .gitignore
+contentful:
+  spaces:
+    - content:
+        space: ENV_CONTENTFUL_SPACE_ID
+        access_token: ENV_CONTENTFUL_ACCESS_TOKEN
+        individual_entry_files: true
+        client_options:
+            api_url: 'preview.contentful.com'
+            
