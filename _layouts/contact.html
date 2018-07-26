@@ -20,14 +20,15 @@
       <main>
         <div class="container">
           <h1>Schedule your free, 15 minute consultation with an integration expert.</h1>
-          <form name="Contact" method="post" netlify>
-            <!-- <input type="hidden" name="_next" value="https://fsgenergy.com/thank-you" /> -->
+          <form name="Contact" method="post" action="/thank-you" netlify>
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="text" name="email" placeholder="Your Email" required>
             <input type="text" name="phone" placeholder="Phone">
             <input type="text" name="company" placeholder="Company">
             
             <textarea name="additionalComments" placeholder="Additional Comments"></textarea>
+
+            <div data-netlify-recaptcha></div>
 
             <button type="submit">
               <span>Send</span>
