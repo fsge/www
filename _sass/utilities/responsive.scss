@@ -23,6 +23,9 @@
 }
 
 @media (max-width: 760px) {
+  .hide-desktop {
+    display:block;
+  }
   header, footer {
     padding: 25px;
   }
