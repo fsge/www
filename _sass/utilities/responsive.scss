@@ -23,6 +23,9 @@
 }
 
 @media (max-width: 760px) {
+  .hide-desktop {
+    display:block;
+  }
   header, footer {
     padding: 25px;
   }
@@ -43,7 +46,7 @@
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 32.5px;
+        top: 15px;
         right: 25px;
         z-index:999;
 
