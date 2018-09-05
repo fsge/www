@@ -32,6 +32,9 @@
   header nav ul li.dropdown > a {
     display:none;
   }
+  header nav ul li.dropdown ul {
+    text-align:center;
+  }
 
   header {
     position: relative;
