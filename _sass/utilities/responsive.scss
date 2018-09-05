@@ -29,6 +29,9 @@
   header, footer {
     padding: 25px;
   }
+  header nav ul li.dropdown > a {
+    display:none;
+  }
 
   header {
     position: relative;
