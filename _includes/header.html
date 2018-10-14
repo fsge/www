@@ -17,7 +17,14 @@
       <img src="/img/logo-{{ include.logo }}.svg" alt="FSG Clarity" />
     </a>
     <a class="mobile-nav-open">
-      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 35 24"><path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M1 12h33M1 1h33M1 23h33"/></svg>
+      <svg version="1.1"
+         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+         x="0px" y="0px" width="34.7px" height="23.4px" viewBox="0 0 34.7 23.4" style="enable-background:new 0 0 34.7 23.4;"
+         xml:space="preserve">
+        <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1" y1="1" x2="33.7" y2="1.1"/>
+        <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1" y1="11.7" x2="33.7" y2="11.7"/>
+        <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1" y1="22.3" x2="33.7" y2="22.4"/>
+      </svg>
     </a>
     <ul>
       <li class="hide-desktop"> <a href="https://fsgenergy.com/"> <span>Home</span> </a> </li>
@@ -31,7 +38,7 @@
 <script>
   (function() {
     var trigger = document.querySelector('.mobile-nav-open'),
-        menu = document.querySelector('header > nav > ul');
+        menu = document.querySelector('header > nav');
 
     trigger.addEventListener('click', function() {
       if (menu.classList.toString().indexOf('open') > -1) {
