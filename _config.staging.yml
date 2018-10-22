@@ -19,6 +19,7 @@ contentful:
     - content:
         space: ENV_CONTENTFUL_SPACE_ID
         access_token: ENV_CONTENTFUL_ACCESS_TOKEN
+        all_entries: true
         individual_entry_files: true
         client_options:
             api_url: 'preview.contentful.com'
