@@ -29,11 +29,15 @@
   .hide-desktop {
     display:block;
   }
+  header nav ul li svg {
+  display:none;
+  }
   header, footer {
     padding: 25px;
   }
   header nav ul li.dropdown > a {
-    display:none;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   header nav ul li.dropdown ul {
     text-align:center;
